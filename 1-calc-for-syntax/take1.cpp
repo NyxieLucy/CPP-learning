@@ -1,16 +1,39 @@
 #include <iostream>
 #include <string>
-
-namespace burgers {
-int x = 12;
-}
-namespace hotdogs {
-int x = 16;
-}
 // same as C apparently
 int main() {
-  std::cout << burgers::x << "\n";
-  std::cout << hotdogs::x;
+  std::cout << "please enter your first number: ";
+  int x;
+  std::cin >> x;
+  std::cout << "now enter your second number: ";
+  int y;
+  std::cin >> y;
+  double total;
+  std::cout << "your operation? (- + / *): ";
+  char nyar;
+  std::cin >> nyar;
+  if (nyar == '+') {
+    total = y + x;
+    std::cout << "your total is : " << total;
+  } else if (nyar == '-') {
+    total = x - y;
+    std::cout << "your total is : " << total;
+  } else if (nyar == '*') {
+    total = x * y;
+    std::cout << "your total is : " << total;
+
+  } else if (nyar == '/') {
+    if (y != 0) {
+      // i added static_cast<double> so that total doesn't give me an int, even
+      // if we assigned it as double, we should specify here i guess
+      total = static_cast<double>(x) / y;
+      std::cout << "your total is : " << total;
+    } else {
+      std::cout << "this operation is impossible";
+    }
+  } else {
+    std::cout << "no operation included";
+  }
 
   return 0;
 }

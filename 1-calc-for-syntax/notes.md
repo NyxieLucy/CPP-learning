@@ -27,6 +27,7 @@ int main() {
 ```
 
 also fellas, namespaces allows you to declare different values to the same variable, example:
+
 ```
 #include <iostream>
 #include <string>
@@ -44,3 +45,5 @@ int main() {
   return 0;
 }
 ```
+
+and i suppose i'm done with the simple calculator
