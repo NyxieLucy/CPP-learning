@@ -1,9 +1,17 @@
 #include <iostream>
 #include <string>
+
+namespace burgers {
+int x = 12;
+}
+namespace hotdogs {
+int x = 16;
+}
 // same as C apparently
 int main() {
-  int number1 = 1;
-  std::cout << number1 << std::endl;
+  std::cout << burgers::x << "\n";
+  std::cout << hotdogs::x;
+
   return 0;
 }
 // fellas it's not like C
