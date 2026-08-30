@@ -2,9 +2,12 @@
 
 basically i'm trying to learn the basics of C++ now
 
+*** edit:
+also C now, since it's more free and all, and i lwk hate OOP, i hate the logic behind it and its philosophy
+
 ### how
 
-by making small mini projects
+by making small mini projects aside from documenting them
 
 ### projects
 
@@ -29,7 +32,7 @@ second of all here we learn pointers kinda, i still don't know what the hell i'm
 just compiling and checking errors trying stuff until it works,
 but what i did understand in this example is that, we basically rent a place in memory assign it values in stuff with the vector we created, then if it overloaded it expands deleting what was there before to create more space for more content,
 and pointers are the stuff that snitches on the memory address in that sense, they be like "this way officer the weed is at this location in the memory"
-anyways, the syntax i suppose is just like rust over all:
+anyways, the syntax i suppose is just like rust over at all:
 
 ```
 int x = 3;
@@ -39,3 +42,8 @@ std::cout <<  *p;
 
 like they be looking at it, and i hate it honestly, but alright, i'll learn about it more, but for now
 fuck them pointers
+
+## 4. Palindrome checker : for the C program
+
+not much, just the basics, new think i did learn is that C doesn't have the notorious `push()` method, you just declare stuff directly, and the logic matters much more than the actual coding (i know a shocker right?) anyway, also a thing to remember to myself is to how to link files:
+`include "your_file.c"` is the terms you use i suppose, idk if there is another way but i got this
